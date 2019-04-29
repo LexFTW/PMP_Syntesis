@@ -1,0 +1,59 @@
+/* Hoja de RESET */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Mitr;
+}
+
+body{
+  background: #f0f0f0;
+}
+
+h3{
+  font-size: 2em;
+}
+
+.annotation{
+  color: gray;
+  font-size: 0.8em;
+}
+
+.container-fluid{
+  margin: 100px auto;
+}
+
+.col-md-8{
+  margin: 0 auto;
+}
+
+.row{
+  margin: 0;
+}
+
+.card{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-body{
+  padding: 0;
+}
+
+.input-group-prepend{
+  background: #F4F8F7;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input-group-text{
+  background: transparent;
+  border: 0;
+}
+
+.input-group-prepend input, .input-group-prepend input:hover, .input-group-prepend input:focus{
+  background: transparent;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}

@@ -1,0 +1,21 @@
+#banner{
+  background-image: url("../../images/web.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+#banner > h3{
+  padding: 20px;
+}
+
+#btnRedirectLogin{
+  padding-bottom: 10px;
+}
+
+.card > .card-body > .row > .col-md-8{
+  padding: 20px;
+}
