@@ -8,6 +8,10 @@
   color: white;
 }
 
+.card, .card-body{
+  border: 0;
+}
+
 #banner > h3{
   padding: 20px;
 }
@@ -18,4 +22,14 @@
 
 .card > .card-body > .row > .col-md-8{
   padding: 20px;
+}
+
+.section-register{
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  padding: 15px;
+}
+
+h4.section-register-title{
+  text-align: left;
 }

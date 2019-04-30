@@ -10,7 +10,18 @@ body{
 }
 
 h3{
-  font-size: 2em;
+  font-size: 1.8em;
+  padding-bottom: 5px;
+}
+
+.error-message{
+	font-size: 0.75em;
+	color: red;
+	padding-bottom: 15px;
+}
+
+.white-line{
+	background: white;
 }
 
 .annotation{
