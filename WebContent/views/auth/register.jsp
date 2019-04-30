@@ -1,19 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no">
-<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik|Mitr" rel="stylesheet">
-<link rel="stylesheet" href="../../css/bootstrap.min.css"></link>
-<link rel="stylesheet" href="../../css/reset.css"></link>
+<jsp:include page="../header.jsp"></jsp:include>
 <link rel="stylesheet" href="../../css/auth/register.css"></link>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<!-- <link rel="stylesheet" href="css/app.css"></link> -->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<title>Login Page</title>
+<title>PMP - Registrar</title>
 </head>
 <body>
   <div class="container-fluid">
@@ -55,7 +42,7 @@
               </div>
               <div class="col-md-4 d-none d-sm-block" id="banner">
                 <h3>¿Ya tienes cuenta de PMP?</h3>
-                <a href="/PMP_Syntesis/index.jsp">
+                <a href="login.jsp">
                   <button type="button" class="btn btn-outline-light" id="btnRedirectLogin">Iniciar Sesión</button>
                 </a>
               </div>

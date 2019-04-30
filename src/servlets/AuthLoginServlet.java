@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import classes.Client;
+
 /**
  * Servlet implementation class AuthLoginServlet
  */
@@ -42,7 +44,7 @@ public class AuthLoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("views/auth/login.jsp");
 	}
 
 	/**
@@ -52,8 +54,11 @@ public class AuthLoginServlet extends HttpServlet {
 		if(request.getParameter("username").length() == 0) {
 			doGet(request, response);
 		}
-		response.getWriter().append(request.getParameter("username"));
-		response.sendRedirect("views/auth/register.jsp");
+		
+		Client client = Client.getCurrentClient();
+		client.setUsername(request.getParameter("username"));
+		client.setPassword(request.getParameter("password"));
+		response.sendRedirect("views/home/home.jsp");
 	}
 
 }
