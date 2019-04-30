@@ -15,7 +15,7 @@ h3{
 }
 
 .error-message{
-	font-size: 0.75em;
+	font-size: 0.85em;
 	color: red;
 	padding-bottom: 15px;
 }
@@ -67,4 +67,14 @@ h3{
   border: 0;
   outline: none;
   box-shadow: none;
+}
+
+.carousel-indicators{
+  position: relative;
+  margin: 0 auto;
+  padding: 15px 0 20px 0;
+}
+
+.alert.alert-danger .close{
+	color: red;
 }

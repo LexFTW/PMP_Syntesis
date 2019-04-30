@@ -1,0 +1,13 @@
+.container-fluid{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.col-md-8, .col-md-4{
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-8 .card-body{
+  position: relative;
+}

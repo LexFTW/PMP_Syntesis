@@ -52,7 +52,8 @@ public class AuthLoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		response.sendRedirect("views/auth/login.jsp");
+		Client client = Client.getCurrentClient();
+		response.sendRedirect("views/home/home.jsp");
 	}
 
 	/**
