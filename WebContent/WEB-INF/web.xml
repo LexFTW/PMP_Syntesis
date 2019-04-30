@@ -7,7 +7,9 @@
 	version="3.1">
 
 	<display-name>PMP - Programming Market Place</display-name>
-
+	<welcome-file-list>
+		<welcome-file>views/auth/login.jsp</welcome-file>
+	</welcome-file-list>
 	<servlet>
 		<servlet-name>Login</servlet-name>
 		<display-name>AuthLoginServlet</display-name>

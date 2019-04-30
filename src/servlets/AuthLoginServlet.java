@@ -52,7 +52,7 @@ public class AuthLoginServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		if(request.getParameter("username").length() == 0) {
-			doGet(request, response);
+			response.getWriter().append((CharSequence) request.getAttribute("errorMessage"));
 		}
 		
 		Client client = Client.getCurrentClient();
