@@ -49,12 +49,13 @@
   	                  <input type="text" name="mail" class="form-control" placeholder="Correo Electrónico" aria-describedby="mail" id="mail">
   	                </div>
   	              </div>
-                  <input type="submit" name="register" id="register" value="Registrar" class="btn btn-primary float-right">
+  	              <hr />
+                  <input type="submit" name="register" id="register" value="Registrar" class="btn btn-primary">
                 </form>
               </div>
               <div class="col-md-4 d-none d-sm-block" id="banner">
                 <h3>¿Ya tienes cuenta de PMP?</h3>
-                <a href="/index">
+                <a href="/PMP_Syntesis/index.jsp">
                   <button type="button" class="btn btn-outline-light" id="btnRedirectLogin">Iniciar Sesión</button>
                 </a>
               </div>
