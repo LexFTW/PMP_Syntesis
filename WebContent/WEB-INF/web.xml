@@ -13,8 +13,9 @@
 	<!-- </servlet> -->
 
 	<servlet>
-		<servlet-name>Login GET</servlet-name>
-		<servlet-class>servlets.login</servlet-class>
+		<servlet-name>Login</servlet-name>
+		<display-name>AuthLoginServlet</display-name>
+		<servlet-class>servlets.AuthLoginServlet</servlet-class>
 	</servlet>
 
 	<!-- <servlet-mapping> -->
@@ -23,7 +24,7 @@
 	<!-- </servlet-mapping> -->
 
 	<servlet-mapping>
-		<servlet-name>Login GET</servlet-name>
+		<servlet-name>Login</servlet-name>
 		<url-pattern>/login/</url-pattern>
 	</servlet-mapping>
 </web-app>
