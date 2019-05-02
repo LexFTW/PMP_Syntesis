@@ -1,4 +1,4 @@
-<jsp:include page="../header.jsp"></jsp:include>
+<jsp:include page="/views/header.jsp"></jsp:include>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/auth/index.css"></link>
 <title>PMP - Iniciar Sesión</title>
 </head>
@@ -21,7 +21,7 @@
 							<img src="${pageContext.request.contextPath}/images/wlogo.png" style="width: 80%" />
 							<hr class="white-line" />
 							<h3>¿Aún no estás registrado en PMP?</h3>
-							<a href="${pageContext.request.contextPath}/views/auth/register.jsp">
+							<a href="${pageContext.request.contextPath}/register">
 								<button type="button" class="btn btn-outline-light"
 									id="btnRedirectLogin">Registrarse</button>
 							</a>
@@ -52,7 +52,7 @@
 									value="Iniciar Sesión" class="btn btn-primary">
 							</form>
 							<hr />
-							<a href="forget-password.jsp">¿Has olvidado tu Contraseña?</a>
+							<a href="${pageContext.request.contextPath}/forget-password">¿Has olvidado tu Contraseña?</a>
 						</div>
 					</div>
 				</div>

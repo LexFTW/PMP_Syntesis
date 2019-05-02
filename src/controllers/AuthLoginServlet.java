@@ -20,7 +20,7 @@ import classes.Client;
 /**
  * Servlet implementation class AuthLoginServlet
  */
-@WebServlet(name = "AuthLoginServlet", urlPatterns = { "/login" })
+@WebServlet(name = "AuthLoginServlet", urlPatterns = { "/login/load" })
 public class AuthLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

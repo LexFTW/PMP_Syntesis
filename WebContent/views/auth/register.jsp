@@ -1,5 +1,5 @@
-<jsp:include page="../header.jsp"></jsp:include>
-<link rel="stylesheet" href="../../css/auth/register.css"></link>
+<jsp:include page="/views/header.jsp"></jsp:include>
+<link rel="stylesheet" href="css/auth/register.css"></link>
 <title>PMP - Registrar</title>
 </head>
 <body>
@@ -82,7 +82,7 @@
                 <img src="${pageContext.request.contextPath}/images/wlogo.png" style="width: 80%"/>
                 <hr class="white-line" />
                 <h3>¿Ya tienes cuenta de PMP?</h3>
-                <a href="${pageContext.request.contextPath}/views/auth/login.jsp">
+                <a href="${pageContext.request.contextPath}/login">
                   <button type="button" class="btn btn-outline-light" id="btnRedirectLogin">Iniciar Sesión</button>
                 </a>
               </div>
