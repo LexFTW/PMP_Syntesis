@@ -1,27 +1,27 @@
 <jsp:include page="../header.jsp"></jsp:include>
-<link rel="stylesheet" href="/PMP_Syntesis/css/auth/index.css"></link>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/auth/index.css"></link>
 <title>PMP - Iniciar Sesión</title>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="col-md-8">
-			<div class="alert alert-danger fade show" role="alert">
-				<span class="error-message"> <i
-					class="fas fa-exclamation-triangle"></i> <%=request.getAttribute("errorMessage")%>
-				<span>
-				<button type="button" class="close" data-dismiss="alert"
-							aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
+			<!-- 			<div class="alert alert-danger fade show" role="alert"> -->
+			<!-- 				<span class="error-message"> <i -->
+			<%-- 					class="fas fa-exclamation-triangle"></i> <%=request.getAttribute("errorMessage")%> --%>
+			<!-- 				<span> -->
+			<!-- 				<button type="button" class="close" data-dismiss="alert" -->
+			<!-- 							aria-label="Close"> -->
+			<!-- 					<span aria-hidden="true">&times;</span> -->
+			<!-- 				</button> -->
+			<!-- 			</div> -->
 			<div class="card">
 				<div class="card-body">
 					<div class="row">
 						<div class="col-md-4 d-none d-sm-block" id="banner">
-							<img src="/PMP_Syntesis/images/wlogo.png" style="width: 80%" />
+							<img src="${pageContext.request.contextPath}/images/wlogo.png" style="width: 80%" />
 							<hr class="white-line" />
 							<h3>¿Aún no estás registrado en PMP?</h3>
-							<a href="register.jsp">
+							<a href="${pageContext.request.contextPath}/views/auth/register.jsp">
 								<button type="button" class="btn btn-outline-light"
 									id="btnRedirectLogin">Registrarse</button>
 							</a>

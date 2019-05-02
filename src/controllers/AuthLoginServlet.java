@@ -52,8 +52,7 @@ public class AuthLoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		Client client = Client.getCurrentClient();
-		response.sendRedirect("views/home/home.jsp");
+		response.sendRedirect("views/auth/login.jsp");
 	}
 
 	/**
@@ -73,8 +72,8 @@ public class AuthLoginServlet extends HttpServlet {
 				ResultSet resultset = statement.executeQuery(
 						"SELECT * FROM clientes WHERE username = '" + username + "' && password = '" + password + "'");
 				if (resultset.absolute(1)) {
-					client.setName(resultset.getString("nombre"));
-					client.setMail(resultset.getString("email"));
+					client.setFullname(resultset.getString("fullname"));
+					client.setEmail(resultset.getString("email"));
 					client.setUsername(resultset.getString("username"));
 					client.setPassword(resultset.getString("password"));
 

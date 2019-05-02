@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmins.jcp.org/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
-	http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmins.jcp.org/xml/ns/javaee"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
-
 	<display-name>PMP - Programming Market Place</display-name>
 	<welcome-file-list>
 		<welcome-file>views/auth/login.jsp</welcome-file>
 	</welcome-file-list>
-	<servlet>
-		<servlet-name>Login</servlet-name>
-		<display-name>AuthLoginServlet</display-name>
-		<servlet-class>servlets.AuthLoginServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Login</servlet-name>
-		<url-pattern>/login/</url-pattern>
-	</servlet-mapping>
 </web-app>

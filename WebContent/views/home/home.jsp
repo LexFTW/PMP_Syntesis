@@ -20,8 +20,8 @@
 	  <body>
 	      <div class="container-fluid">
 	    	   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	           <a href="#" class="navbar-brand">
-	             <img />
+	           <a href="#" class="navbar-brand" style="background:white; color: black; padding: 5px 12px; border-radius: 50%">
+	             <% out.println(Client.getCurrentClient().getFullname().substring(0,1));  %>
 	           </a>
 	           <button type="button" name="toggle-button" class="navbar-toggler" data-toggle="collapse" data-target="#navMain" arial-controls="navbarNav" aria-expanded="false" aria-label="Navegación Móvil">
 	             <span class="navbar-toggler-icon"></span>

@@ -11,7 +11,7 @@
               <div class="col-md-8">
                 <h3>Registrarse</h3>
                 <hr />
-                <form class="" action="index.html" method="post">
+                <form class="" action="/PMP_Syntesis/register" method="post">
                   <div class="section-register">
                     <h4 class="section-register-title">Datos de Cliente</h4>
                     <div class="input-group mb-3">
@@ -24,10 +24,10 @@
     	              </div>
                     <div class="input-group mb-3">
     	                <div class="input-group-prepend">
-    	                  <span class="input-group-text" id="mail">
+    	                  <span class="input-group-text" id="email">
     	                    <i class="fas fa-envelope"></i>
     	                  </span>
-    	                  <input type="text" name="mail" class="form-control" placeholder="Correo Electrónico" aria-describedby="mail" id="mail">
+    	                  <input type="text" name="email" class="form-control" placeholder="Correo Electrónico" aria-describedby="email" id="email">
     	                </div>
     	              </div>
                     <div class="input-group mb-3">
@@ -79,10 +79,10 @@
                 </form>
               </div>
               <div class="col-md-4 d-none d-sm-block" id="banner">
-                <img src="../../images/wlogo.png" style="width: 80%"/>
+                <img src="${pageContext.request.contextPath}/images/wlogo.png" style="width: 80%"/>
                 <hr class="white-line" />
                 <h3>¿Ya tienes cuenta de PMP?</h3>
-                <a href="login.jsp">
+                <a href="${pageContext.request.contextPath}/views/auth/login.jsp">
                   <button type="button" class="btn btn-outline-light" id="btnRedirectLogin">Iniciar Sesión</button>
                 </a>
               </div>
