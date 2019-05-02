@@ -18,60 +18,76 @@
     <title>PMP - Programming Market Place</title>
   </head>
   <body>
-      <div class="container-fluid">
-    	   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-           <a href="#" class="navbar-brand">
-             <img />
-           </a>
-           <button type="button" name="toggle-button" class="navbar-toggler" data-toggle="collapse" data-target="#navMain" arial-controls="navbarNav" aria-expanded="false" aria-label="Navegación Móvil">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navMain">
-             <ul class="navbar-nav">
-               <li class="nav-item active">
-                 <a href="#" class="nav-link">Inicio</a>
-               </li>
-               <li class="nav-item">
-                 <a href="#" class="nav-link">Mis Productos</a>
-               </li>
-             </ul>
-           </div>
-         </nav>
-         <div class="row">
-           <div class="col-md-8">
-             <div class="card">
-               <div class="card-body" style="background:red">
-                 <div class="carousel slide" id="carMain" data-ride="carousel">
-                   <div class="carousel-inner">
-                     <div class="carousel-item active">
-                       <img class="d-block" src="../../images/wlogo.png" style="width: 60%; margin: 0 auto" alt="First slide">
-                     </div>
-                     <div class="carousel-item">
-                       <img class="d-block" src="../../images/logo.png" style="width: 60%; margin: 0 auto" alt="Second slide">
-                     </div>
-                   </div>
-                   <ol class="carousel-indicators">
-                     <li data-target="#carMain" data-slide-to="0" class="active"></li>
-                     <li data-target="#carMain" data-slide-to="0"></li>
-                     <li data-target="#carMain" data-slide-to="0"></li>
-                   </ol>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="col-md-4">
-             <div class="card">
-               <div class="card-body" style="background:cyan">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">
 
-               </div>
+        </a>
+        <button type="button" name="toggle-button" class="navbar-toggler" data-toggle="collapse" data-target="#navMain" arial-controls="navbarNav" aria-expanded="false" aria-label="Navegación Móvil">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Mis Productos</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdwon-toggle" href="#" id="NavDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="background:white; color: black; padding: 5px 12px; border-radius: 50%">
+               <% out.println(Client.getCurrentClient().getFullname().substring(0,1));  %>
+               A
+             </a>
+             <div class="dropdown-menu dropdown-menu-right" aria-labelledbu="NavDown">
+               <a class="dropdown-item">Mi Cuenta</a>
+               <a class="dropdown-item">Mis compras</a>
+               <a class="dropdown-item">Gestión de Usuarios</a>
+               <a class="dropdown-item">Añadir Producto</a>
              </div>
-           </div>
-         </div>
+           </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-md-8" style="margin: 0 auto">
+          <div class="card">
+            <div class="card-body" style="padding:20px">
+              <form class="" action="index.html" method="post">
+                <input type="text" name="" placeholder="Nombre de la aplicación" style="width: 100%" class="form-control">
+                <div class="row" style="margin: 0 auto; margin-top: 15px;">
+                  <div class="col-md-6" style="padding: 0">
+                    <div class="product-img-selected" style="border: 1px solid #ddd; border-radius:5px; width:100%; height:auto">
+                      <img src="../../images/logo.png" style="width: 100%; border-radius: 5px"/>
+                    </div>
+                  </div>
+                  <div class="col-md-6" style=" padding: 10px;">
+                    <select class="" name="">
+                      <option value="1">Gratuita</option>
+                      <option value="2">Pago</option>
+                    </select>
+                    <select class="" name="" multiple>
+                      <option value="1">Android</option>
+                      <option value="2">iOS</option>
+                      <option value="3">Windows 7/8/10</option>
+                      <option value="4">Linux</option>
+                      <option value="">Mac</option>
+                    </select>
+                    <textarea name="name" rows="8" style="width: 100%" placeholder="Descripción de la aplicación" class="form-control"></textarea>
+                    <input type="text" class="form-control" name="" placeholder="Tag1; Tag2; Tag3">
+                    <div class="tags">
+
+                    </div>
+                    <input type="submit" class="btn btn-primary" name="" value="Añadir Producto">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </body>
-  <script type="text/javascript">
-    $('.carousel').carousel({
-      interval: 5000
-    })
-  </script>
 </html>
