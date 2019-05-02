@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-04-2019 a las 20:25:59
+-- Tiempo de generación: 02-05-2019 a las 20:28:19
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 7.2.10
 
@@ -30,20 +30,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `clientes` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(120) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `telephone` varchar(11) DEFAULT NULL,
-  `address` varchar(150) DEFAULT NULL,
-  `username` varchar(15) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `fullname` varchar(175) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `address` varchar(200) DEFAULT NULL,
+  `telephone` varchar(15) DEFAULT NULL,
+  `username` varchar(25) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `customer_id` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `clientes`
 --
 
-INSERT INTO `clientes` (`id`, `nombre`, `email`, `telephone`, `address`, `username`, `password`) VALUES
-(1, 'Alexis Mengual Vázquez', 'lexmengual@gmail.com', NULL, NULL, 'alexis.mengual', 'Contraseña');
+INSERT INTO `clientes` (`id`, `fullname`, `email`, `address`, `telephone`, `username`, `password`, `customer_id`) VALUES
+(1, 'Alexis Mengual Vázquez', 'lexmengual@gmail.com', '664657907', NULL, 'alexis.mengual', 'Contraseña', 'cus_EzgNhLqNBfMTPN');
 
 --
 -- Índices para tablas volcadas
@@ -53,7 +54,18 @@ INSERT INTO `clientes` (`id`, `nombre`, `email`, `telephone`, `address`, `userna
 -- Indices de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `clientes`
+--
+ALTER TABLE `clientes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
