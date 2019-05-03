@@ -44,4 +44,13 @@
 		<servlet-name>home.jsp</servlet-name>
 		<url-pattern>/home</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>product-create.jsp</servlet-name>
+		<jsp-file>/views/products/product-create.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>product-create.jsp</servlet-name>
+		<url-pattern>/products-create</url-pattern>
+	</servlet-mapping>
 </web-app>

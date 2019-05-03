@@ -54,9 +54,9 @@ public class AuthLoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 		Client client = Client.getCurrentClient();
 		if(client == null) {
-			response.sendRedirect("views/auth/login.jsp");	
+			response.sendRedirect("/PMP_Syntesis/login");	
 		}else {
-			response.sendRedirect("views/home/home.jsp");
+			response.sendRedirect("/PMP_Syntesis/home");
 		}
 	}
 
@@ -82,7 +82,7 @@ public class AuthLoginServlet extends HttpServlet {
 					client.setUsername(resultset.getString("username"));
 					client.setPassword(resultset.getString("password"));
 
-					response.sendRedirect("views/home/home.jsp");
+					response.sendRedirect("/PMP_Syntesis/home");
 				} else {
 					request.setAttribute("errorMessage", "El nombre de usuario o contraseña son incorrectos.");
 					RequestDispatcher dispatcher = request.getRequestDispatcher("views/auth/login.jsp");
