@@ -11,3 +11,7 @@
 .col-md-8 .card-body{
   position: relative;
 }
+
+.col-md-6.form-product > *{
+	margin-top: 10px;
+}

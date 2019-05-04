@@ -29,7 +29,7 @@
 						<div class="col-md-8">
 							<h3>Iniciar Sesión</h3>
 							<hr />
-							<form class="" action="/PMP_Syntesis/login" method="post">
+							<form class="" action="/PMP_Syntesis/login/load" method="post">
 								<div class="input-group mb-3">
 									<div class="input-group-prepend">
 										<span class="input-group-text" id="username"> <i
